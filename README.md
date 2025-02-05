@@ -1,3 +1,5 @@
 # vs2022-formApp
 
-windows‚Å‚ÌŠJ”­
+windows‚Å‚ÌŠJ”­ŠÂ‹«
+
+git
