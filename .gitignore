@@ -1,0 +1,20 @@
+# ビルド成果物
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Visual Studio 関連ファイル
+.vs/
+*.suo
+*.user
+*.cache
+*.sln.docstates
+
+# NuGet パッケージ
+packages/
+
+# その他のファイル
+*.tmp
+*.log
