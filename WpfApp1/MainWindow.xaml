@@ -10,7 +10,7 @@
         Style="{StaticResource MaterialDesignWindow}"
         >
     <Grid>
-        <Label Content="This is WPF app&#xA;.net 8 is used. 日本語 This is test" HorizontalAlignment="Left" Height="237" Margin="37,36,0,0" VerticalAlignment="Top" Width="731" FontSize="48"/>
+        <Label Content="This is WPF app&#xA;.net 8 is used. 日本語 This is test" HorizontalAlignment="Left" Height="134" Margin="37,36,0,0" VerticalAlignment="Top" Width="731" FontSize="48"/>
         <Label Content="2つ目のLabel。UIを試してみたい" HorizontalAlignment="Center" Height="83" Margin="0,201,0,0" VerticalAlignment="Top" Width="732" FontSize="48"/>
         <Label Content="Material Design in Xaml" HorizontalAlignment="Left" Height="83" Margin="36,289,0,0" VerticalAlignment="Top" Width="732" FontSize="48"/>
         <Button Content="Button" HorizontalAlignment="Left" Height="111" Margin="217,459,0,0" VerticalAlignment="Top" Width="120"/>
