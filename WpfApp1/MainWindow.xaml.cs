@@ -25,5 +25,15 @@ namespace WpfApp1
         {
 
         }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // ボタンクリック時の処理
+            string bucketName = "your-bucket-name"; // バケット名を指定
+            string prefix = "your-folder/"; // フォルダを指定 (省略可)
+
+            await SampleAWSS3.ListFilesAsync(bucketName, prefix);
+
+        }
     }
 }
