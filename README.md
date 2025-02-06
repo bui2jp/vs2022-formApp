@@ -1,5 +1,7 @@
-# vs2022-formApp
+﻿# vs2022-formApp
 
-windows�ł̊J����
+windowsでの開発環境
 
-git
+git の設定
+
+
