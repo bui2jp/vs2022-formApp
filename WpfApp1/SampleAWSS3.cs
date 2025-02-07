@@ -1,29 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Amazon.S3;
-using Amazon.S3.Model;
-using System.Diagnostics;
-using System.Net.Sockets;
+// <copyright file="SampleAWSS3.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace WpfApp1
 {
-    //internal class SampleAWSS3
-    //{
-    //}
+    using System;
+    using System.Diagnostics;
+    using System.Threading.Tasks;
 
+    using Amazon.S3;
+    using Amazon.S3.Model;
 
-
+    /// <summary>
+    /// Example base class.
+    /// </summary>
     public class SampleAWSS3
     {
+        /// <summary>
+        /// Example base class.
+        /// </summary>
         public static async Task ListFilesAsync(string bucketName, string prefix = null)
         {
             try
             {
-                var s3Client = new AmazonS3Client();// 環境変数が自動的に読み込まれます
-                
+
+                var s3Client = new AmazonS3Client(); // 環境変数が自動的に読み込まれます
+
                 var response2 = await s3Client.ListBucketsAsync();
 
                 Debug.WriteLine("バケット一覧:");
@@ -34,13 +36,12 @@ namespace WpfApp1
 
                 Debug.WriteLine("s3 done4");
 
-                //my-iot-data
-
+                // my-iot-data
                 var request = new ListObjectsV2Request
                 {
-                    //BucketName = bucketName,
+                    // BucketName = bucketName,
                     BucketName = "my-iot-data",
-                    Prefix = "" // フォルダを指定する場合
+                    Prefix = string.Empty, // フォルダを指定する場合
                 };
 
                 var response = await s3Client.ListObjectsV2Async(request);
@@ -60,7 +61,7 @@ namespace WpfApp1
 
                     foreach (var obj in response.S3Objects)
                     {
-                        Debug.WriteLine($"- {obj.Key}");
+                        Debug.WriteLine($"--- {obj.Key}");
                     }
                 }
             }

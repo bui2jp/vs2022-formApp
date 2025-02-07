@@ -8,4 +8,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\bui05\source\repos\bui2jp\vs2022-formApp\WinFormsApp1\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\bui05\source\repos\bui2jp\vs2022-formApp\WinFormsApp1\.editorconfig" />
+  </ItemGroup>
+
 </Project>

@@ -23,3 +23,16 @@ WPFアプリケーション(.NET 8)
 .NETプラットフォームのためのパッケージマネージャー
 
 Material Design In XAML Toolkitを試してみる。
+
+cli での packageのインストール
+```
+dotnet add package MaterialDesignThemes
+dotnet add package AWSSDK.S3
+dotnet add package 
+dotnet add package StyleCop.Analyzers
+```
+
+
+```
+dotnet restore
+```

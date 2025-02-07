@@ -5,15 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="WpfApp1.MainWindow"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
         Title="MainWindow" Height="648" Width="1015"
         Style="{StaticResource MaterialDesignWindow}"
         >
-    <Grid>
+    <Grid AutomationProperties.HelpText="help">
         <Label Content="This is WPF app&#xA;.net 8 is used. 日本語 This is test" HorizontalAlignment="Left" Height="134" Margin="37,36,0,0" VerticalAlignment="Top" Width="731" FontSize="48"/>
         <Label Content="2つ目のLabel。UIを試してみたい" HorizontalAlignment="Center" Height="83" Margin="0,201,0,0" VerticalAlignment="Top" Width="732" FontSize="48"/>
         <Label Content="Material Design in Xaml" HorizontalAlignment="Left" Height="83" Margin="36,289,0,0" VerticalAlignment="Top" Width="732" FontSize="48"/>
         <Button Content="Button" HorizontalAlignment="Left" Height="111" Margin="217,459,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Margin="425,459,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="379" Height="111"/>
+        <TextBox HorizontalAlignment="Left" Margin="425,478,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="379" Height="36" />
+        <xctk:WatermarkTextBox HorizontalAlignment="Left" Margin="425,529,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="379" Height="36" Watermark="Watermark" TextChanged="WatermarkTextBox_TextChanged"/>
     </Grid>
 </Window>

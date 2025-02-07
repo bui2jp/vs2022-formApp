@@ -1,29 +1,27 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+// <copyright file="MainWindow.xaml.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace WpfApp1
 {
+    using System.Windows;
+    using System.Windows.Controls;
+
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainWindow.xaml.
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainWindow"/> class.
+        /// </summary>
         public MainWindow()
         {
-            InitializeComponent();
+            this.InitializeComponent();
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
         }
 
         private async void Button_Click(object sender, RoutedEventArgs e)
@@ -33,7 +31,10 @@ namespace WpfApp1
             string prefix = "your-folder/"; // フォルダを指定 (省略可)
 
             await SampleAWSS3.ListFilesAsync(bucketName, prefix);
+        }
 
+        private void WatermarkTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
         }
     }
 }
