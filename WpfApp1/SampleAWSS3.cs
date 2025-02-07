@@ -19,7 +19,7 @@ namespace WpfApp1
         /// <summary>
         /// Example base class.
         /// </summary>
-        public static async Task ListFilesAsync(string bucketName, string prefix = null)
+        public static async Task ListFilesAsync(string bucketName, string? prefix = null)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace WpfApp1
                 {
                     // BucketName = bucketName,
                     BucketName = "my-iot-data",
-                    Prefix = string.Empty, // フォルダを指定する場合
+                    Prefix = prefix ?? string.Empty, // フォルダを指定する場合
                 };
 
                 var response = await s3Client.ListObjectsV2Async(request);
