@@ -32,7 +32,7 @@ dotnet add package
 dotnet add package StyleCop.Analyzers
 ```
 
-
+.csproj に定義されているパッケージをインストール (npm install みたいなもの)
 ```
 dotnet restore
 ```
